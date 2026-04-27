@@ -27,9 +27,6 @@ CYN='\[\033[0;36m\]'
 WHT='\[\033[0;39m\]'
 RST='\[\033[0m\]'
 
-# PS1="${RED}┌──[${WHT}\u${GRN}@${YLW}\h${RED}:${GRN}\w${RED}]\n"
-#PS1+="${RED}|${CYN} \$(date +'%F %T') ${RED}- (${GRN}\$(git branch 2>/dev/null | sed -n 's/^\* //p')${RED})\n"
-#PS1+="${RED}└──${GRN}\\\$ ${RST}"
  PS1="${RED}┌─[${WHT}\u${GRN}@${YLW}\h${RED}:${GRN}\w${RED}]\n"
 PS1+="${CYN}\$(date -Iseconds) ${RED}- (${GRN}\$(git branch 2>/dev/null | sed -n 's/^\* //p')${RED})\n"
 PS1+="${RED}└─${GRN}\\\$ ${RST}"
@@ -38,16 +35,24 @@ PS1+="${RED}└─${GRN}\\\$ ${RST}"
 alias cp='cp -i'
 alias decomment='grep -Ev "^[[:space:]]*((#|;|//).*)?$"'
 alias diff='diff --color=auto'
-#alias egrep='egrep --color=auto'
-#alias fgrep='fgrep --color=auto'
 alias grep='grep --color=auto'
 alias l='ls -CF --color=auto'
 alias la='ls -A --color=auto'
-#alias ll='ls -alF --color=auto'
 alias ll='ls -altrF --color=auto'
 alias ls='ls --color=auto'
 alias mv='mv -i'
 alias rm='rm -i'
+
+## COMMANDS
+# KUBECTL AUTOCOMPLETION
+if command -v kubectl &> /dev/null; then
+    source <(kubectl completion bash)
+fi
+
+# RED HAT OC AUTOCOMPLETION
+if command -v oc &> /dev/null; then
+    source <(oc completion bash)
+fi
 
 ## EXPORTS
 export EDITOR=vim
