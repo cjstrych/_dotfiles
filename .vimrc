@@ -1,14 +1,14 @@
 autocmd FileType yaml setlocal autoindent tabstop=2 shiftwidth=2 expandtab number cursorcolumn
 
 "LINE NUMBERING"
-set number        "DISPLAY LINE NUMBERING"
+set number         "DISPLAY LINE NUMBERING"
 
 "SEARCH AND HIGHLIGHTING SETTINGS"
-set hlsearch      "HIGHLIGHTS SEARCH TERMS"
-set ignorecase    "IGNORES CASE WHEN SEARCHING"
-set incsearch     "HIGHLIGHTS SEARCH TERMS AS YOU TYPE THEM"
-set showmatch     "HIGHLIGHTS MATCHING PARENTHESES"
-set smartcase     "UNLESS YOU PUT SOME CAPS IN YOUR SEARCH TERM"
+set hlsearch       "HIGHLIGHTS SEARCH TERMS"
+set ignorecase     "IGNORES CASE WHEN SEARCHING"
+set incsearch      "HIGHLIGHTS SEARCH TERMS AS YOU TYPE THEM"
+set showmatch      "HIGHLIGHTS MATCHING PARENTHESES"
+set smartcase      "UNLESS YOU PUT SOME CAPS IN YOUR SEARCH TERM"
 
 "WHITESPACE SETTINGS"
 set autoindent     "TURNS ON AUTO-INDENTING"
