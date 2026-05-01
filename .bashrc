@@ -46,12 +46,12 @@ alias relabel='touch /.autorelabel'
 alias rm='rm -i'
 
 ## COMMANDS
-# KUBECTL AUTOCOMPLETION
+# KUBERNETES CLI AUTOCOMPLETION
 if command -v kubectl &> /dev/null; then
     source <(kubectl completion bash)
 fi
 
-# RED HAT OC AUTOCOMPLETION
+# RED HAT OPENSHIFT CONTAINER PLATFORM COMMAND LINE INTERFACE (CLI) AUTOCOMPLETION
 if command -v oc &> /dev/null; then
     source <(oc completion bash)
 fi
