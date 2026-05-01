@@ -38,9 +38,11 @@ alias diff='diff --color=auto'
 alias grep='grep --color=auto'
 alias l='ls -CF --color=auto'
 alias la='ls -A --color=auto'
-alias ll='ls -altrF --color=auto'
+alias ll='ls -ltraF --color=auto'
+alias llz='ls -ltraFZ --color=auto'
 alias ls='ls --color=auto'
 alias mv='mv -i'
+alias relabel='touch /.autorelabel'
 alias rm='rm -i'
 
 ## COMMANDS
