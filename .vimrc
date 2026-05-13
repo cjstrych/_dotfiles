@@ -1,3 +1,6 @@
+syntax on
+filetype plugin indent on
+
 autocmd FileType yaml setlocal autoindent tabstop=2 shiftwidth=2 expandtab number cursorcolumn
 
 "LINE NUMBERING"
