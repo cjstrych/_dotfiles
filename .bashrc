@@ -44,11 +44,20 @@ alias ls='ls --color=auto'
 alias mv='mv -i'
 alias relabel='touch /.autorelabel'
 alias rm='rm -i'
+alias sudo='sudo ' 
 
 ## COMMANDS
+# iTerm2 SHELL INTEGRATION
+source ~/.iterm2/shell-integration/iterm2_shell_integration.bash
+
 # KUBERNETES CLI AUTOCOMPLETION
 if command -v kubectl &> /dev/null; then
     source <(kubectl completion bash)
+fi
+
+# PODMAN CLI AUTOCOMPLETION
+if command -v podman &> /dev/null; then
+    source <(podman completion bash)
 fi
 
 # RED HAT OPENSHIFT CONTAINER PLATFORM COMMAND LINE INTERFACE (CLI) AUTOCOMPLETION
