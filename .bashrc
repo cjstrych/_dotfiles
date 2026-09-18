@@ -48,7 +48,7 @@ alias sudo='sudo '
 
 ## COMMANDS
 # iTerm2 SHELL INTEGRATION
-source ~/.iterm2/shell-integration/iterm2_shell_integration.bash
+#source ~/.iterm2/shell-integration/iterm2_shell_integration.bash
 
 # KUBERNETES CLI AUTOCOMPLETION
 if command -v kubectl &> /dev/null; then
